@@ -8,7 +8,7 @@ export const DetailsAddress = ({ restaurantSelect, closeDeatils }) => {
     PlaceService.detailPlace(restaurantSelect).then((res) => {
       setDetails(res);
     });
-  });
+  }, []);
   return (
     <>
       <div className="card box-place">
